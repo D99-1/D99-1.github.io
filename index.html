@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Dhyan99's Portfolio</title>
+  <link rel="shortcut icon" href="/public/img/img.jpeg" type="image/jpeg">
+  <link href="public/css/style.css" rel="stylesheet" type="text/css" />
+
+  <link rel="stylesheet" href="public/css/util.css">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link rel="stylesheet" href="public/css/navbar.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta2/css/all.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+  <!-- Website Meta Data -->
+  <meta name="theme-color" content="#36393e">
+  <meta name="msapplication-TileColor" content="#36393e">
+  <meta name="title" content="Dhyan99">
+  <meta name="description" content="Hi, I'm Dhyan, a young programmer, and this is my portfolio site featuring all my projects as well as my free-to-use multipurpose api">
+  <meta name="keywords"
+      content="developer, dhyan99, programming, d99,portfolio, 99">
+  <meta name="language" content="English">
+  <meta name="author" content="Dhyan99">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://d99-1.github.io">
+  <meta property="og:title" content="Dhyan99">
+  <meta property="og:description" content="Hi, I'm Dhyan, a young programmer, and this is my portfolio site featuring all my projects as well as my free-to-use multipurpose api">
+  <meta property="twitter:card" content="summary_large_image">
+  <!-- Website Meta Data End -->
+</head>
+
+<body>
+  <nav id='nav' style="width: 100vw; backdrop-filter: blur(5px); box-shadow: inset 0 -1px 0 0 hsla(0,0%,100%,0.1)">
+    <div class="nav-wrapper">
+      <div class="brand">
+        <span>
+          <strong class="shine" style="color: white; font-family: monospace; font-size: 30px">Dhyan99</strong>
+        </span>
+      </div>
+      <div class="hamburger" style="padding-left: 23px;">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-list" data-unselectable="unselectable content">
+        <li><a class="nav-link" id="home-nav" data-scroll="#home">Home</a></li>
+        <li><a class="nav-link" id="about-nav" data-scroll="#about">About</a></li>
+        <li><a class="nav-link" id="projects-nav" data-scroll="#projects">Projects</a> </li>
+        <li><a class="nav-link" id="api-nav" data-scroll="#api">API</a> </li>
+        <li><a class="nav-link" target="_blank" href="https://buymeacoffee.com/dhyan99">Donate</a>
+        </li>
+
+      </ul>
+    </div>
+              <div class="progress-container">
+    <div class="progress-bar" id="progressBar"></div>
+  </div>
+  </nav>
+  <section id="home" class="home">
+  <div class="content" id="">
+    <div class="social">
+      <a href="https://github.com/D99-1" id="github" target="_blank" class="icon">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://stackoverflow.com/users/16370345/d99" id="stackOverflow" target="_blank" class="icon">
+        <i class="fab fa-stack-overflow"></i>
+      </a>
+
+    </div>
+    <div class="text">
+      <h1 class="shine head">Hi, I'm <span>Dhyan99</span></h1>
+
+      <p class="typing">A <span class="typing-text"></span>Developer</p>
+    </div>
+  </div>
+  <section id="about" class="about">
+
+    <!-- <h4 class="about-title c-white">About</h4> -->
+    <div class="about-content d-flex align-center space-between row">
+
+      <div class="about-text">
+        <h4 class="about-title c-white">About Me</h4>
+        <p class="about-description grey">I am a versatile young programmer with experience in several programming languages and technologies including Javascript, Python, HTML, CSS, and more. I have a passion for solving complex problems and a talent for adapting to new tools. My skills, enthusiasm, and commitment make me a valuable asset in any project or role. </p>
+      </div>
+    </div>
+  </section>
+  <div class="stats">
+    <section class="statistics">
+      <div class="stats-container">
+        <div class="stats-item">
+          <p class="highlight"><span data-purecounter-start="0" data-purecounter-end="30"
+            class="highlight purecounter">45</span>+</p><span class="stats-description">Projects Completed</span>
+      </div>
+        <div class="stats-item">
+          <p class="highlight">$<span data-purecounter-start="0" data-purecounter-end="30"
+              class="highlight purecounter">30</span></p><span class="stats-description">Funds Raised</span>
+        </div>
+        <div class="stats-item stats-item2">
+          <p data-purecounter-start="0" data-purecounter-end="8" class="highlight purecounter">8</p><span
+            class="stats-description">Areas of Knowledge</span>
+        </div>
+      </div>
+    </section>
+  </div>
+  <section id="projects" class="projects">
+    <h4 class="about-title c-white">Projects</h4>
+    <div class="project-content"></div>
+    <div class="m-project-content"></div>
+
+  </section>
+
+  <section id="api" class="projects">
+    <h4 class="about-title c-white">API Endpoints</h4>
+    <p class="about-description grey" style="font-size: 18px;">Countless Free To Use API Endpoints</p>
+    <div class="ecards" id='endpoints'>
+    </div>
+</section>
+  
+  <footer>
+    <div class="footer-content">
+      <p style="font-size: 25px; line-height: 1;">Created By Dhyan Tanna</p>
+    </div>
+    <div>       </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
+  <script src="public/js/endpoints.js"></script>
+  <script>
+
+    if (window.innerWidth > 600) {
+      new PureCounter({
+        selector: '.purecounter',
+        start: 0,
+        end: 100,
+        duration: 2,
+        delay: 10,
+        once: true,
+        repeat: false,
+        decimals: 0,
+        legacy: true,
+        filesizing: false,
+        currency: false,
+        separator: false,
+      });
+    }
+
+
+  </script>
+
+<div id="page-content">
+<script data-name="BMC-Widget" classList="shine" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="Dhyan99" data-description="Support me on Buy me a coffee!" data-message="Support Me By Leaving A Small Donation" data-color="#5F7FFF" data-position="Left" data-x_margin="18" data-y_margin="18"></script>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js" integrity="sha512-BdHyGtczsUoFcEma+MfXc71KJLv/cd+sUsUaYYf2mXpfG/PtBjNXsPo78+rxWjscxUYN2Qr2+DbeGGiJx81ifg==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r98/three.js"></script>
+  <script src="https://fariskassim.com/stage/rebel9/teaf/blob/v4/js/perlin.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="https://unpkg.com/tippy.js@6"></script>
+  <script type="text/javascript" src="public/js/projects.js"></script>
+  <script type="text/javascript" src="public/js/particles.min.js"></script>
+  <script type="text/javascript" src="public/js/script.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+
+    $(window).ready(function(){ 
+       $('#bmc-wbtn').addClass('wgt-shine')
+    });
+
+ // var element = document.getElementById("bmc-wbtn");
+ // element.classList.add("wgt-shine");
+</script>
+</body>
+
+</html>
