@@ -101,39 +101,6 @@ function clicked(elem){
 
 }
 
-
-
-
-// Blob
-/*const renderer = new THREE.WebGLRenderer({ canvas: document.getElementById('canvas'), antialias: true });
-renderer.setPixelRatio(window.devicePixelRatio);
-renderer.setSize(452, 250);
-const scene = new THREE.Scene();
-let camera = new THREE.PerspectiveCamera(27, window.innerWidth / window.innerHeight, 0.1, 1000);
-camera.position.z = 5;
-const sphere_geometry = new THREE.SphereGeometry(1, 128, 128);
-const material = new THREE.MeshNormalMaterial();
-let sphere = new THREE.Mesh(sphere_geometry, material);
-scene.add(sphere);
-const update = function () {
-	const time = performance.now() * 0.003;
-	const k = 3;
-	for (let i = 0; i < sphere.geometry.vertices.length; i++) {
-		let p = sphere.geometry.vertices[i];
-		p.normalize().multiplyScalar(1 + 0.3 * noise.perlin3(p.x * k + time, p.y * k, p.z * k));
-	}
-	sphere.geometry.computeVertexNormals();
-	sphere.geometry.normalsNeedUpdate = true;
-	sphere.geometry.verticesNeedUpdate = true;
-}
-function animate() {
-	update();
-	renderer.render(scene, camera);
-	requestAnimationFrame(animate);
-}
-requestAnimationFrame(animate);
-*/
-
 // Nav
 
 const links = document.querySelectorAll(".nav-link");
@@ -188,56 +155,6 @@ var typing=new Typed(".typing-text", {
   backDelay: 500,
 
 });
-
-/*
-// Active Menu Highlight
-const highlightMenu = () => {
-  const activeElement = document.querySelector(".highlight-nav");
-  const homeMenu = document.querySelector("#home-nav");
-  const aboutMenu = document.querySelector("#about-nav");
-  const projectsMenu = document.querySelector("#projects-nav");
-  const apiMenu = document .querySelector("#api-nav")
-
-  let scrollPos = window.scrollY;
-  if (window.innerWidth > 1290 && scrollPos < 654.39) {
-	homeMenu.classList.remove("unhighlight-nav")
-    homeMenu.classList.add("highlight-nav");
-    aboutMenu.classList.add("unhighlight-nav");
-	setTimeout(() =>{homeMenu.classList.add("unhighlight-nav");},5000)
-    return;
-  } else if (window.innerWidth > 1280 && scrollPos < 1324.19 ){
-	aboutMenu.classList.remove("unhighlight-nav")
-    aboutMenu.classList.add("highlight-nav");
-    homeMenu.classList.add("unhighlight-nav");
-    projectsMenu.classList.add("unhighlight-nav");
-	setTimeout(() =>{aboutMenu.classList.add("unhighlight-nav");},5000)
-
-    return;
-  } else if (window.innerWidth > 1280 && scrollPos < 2200) {
-	projectsMenu.classList.remove("unhighlight-nav")
-    projectsMenu.classList.add("highlight-nav");
-    aboutMenu.classList.add("unhighlight-nav");
-	apiMenu.classList.add("unhighlight-nav");
-	setTimeout(() =>{projectsMenu.classList.add("unhighlight-nav");},5000)
-    return;
-  } else if(window.innerWidth > 1280 && scrollPos < 20000){
-	apiMenu.classList.remove("unhighlight-nav");
-	apiMenu.classList.add("highlight-nav");
-	projectsMenu.classList.add("unhighlight-nav");
-	setTimeout(() =>{apiMenu.classList.add("unhighlight-nav");},5000)
-  }
-
-  if (
-    (activeElement && window.innerWidth < 1280 && scrollPos < 600) ||
-    activeElement
-  ) {
-    activeElement.classList.add("unhighlight-nav");
-  }
-};
-
-window.addEventListener("scroll", highlightMenu);
-window.addEventListener("click", highlightMenu);
-*/
 
 // API Endpoints
 for (const endpoint of endpoints) {

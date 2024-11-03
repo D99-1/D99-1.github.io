@@ -440,9 +440,10 @@ body {
     background: #000;
     border: 1px solid #333;
     margin: 30px 20px;
-    transition: border 0.3s ease, transform 0.3s ease;
+    transition: border 0.3s ease, transform 1s ease, height 1s ease;
     flex: 1;
     cursor: default;
+
   }
 .outer{
   transition:  height 5s linear;

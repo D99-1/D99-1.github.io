@@ -31,7 +31,7 @@ const endpoints = [
 },
 {
 	"endpoint": "Lyrics",
-	"link": "https://d99api.vercel.app/lyrics?song=YourFavouriteSong",
+	"link": "https://d99api.vercel.app/lyrics?song=Goosebumps",
 	"description": "Now you can read your favourite song"
 },
 {
